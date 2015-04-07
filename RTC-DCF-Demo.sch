@@ -1,0 +1,164 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Clock-Components
+LIBS:RTC-DCF-Demo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA8-P IC?
+U 1 1 55241A1A
+P 3250 3050
+F 0 "IC?" H 2500 4350 40  0000 L BNN
+F 1 "ATMEGA8-P" H 3750 1600 40  0000 L BNN
+F 2 "DIL28" H 3250 3050 30  0000 C CIN
+F 3 "" H 3250 3050 60  0000 C CNN
+F 4 "Value" H 3250 3050 60  0001 C CNN "MPN"
+F 5 "Value" H 3250 3050 60  0001 C CNN "ConradPN"
+	1    3250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1300 2000 1300
+Wire Wire Line
+	2000 1300 3250 1300
+Wire Wire Line
+	3250 1300 3250 1650
+$Comp
+L R R?
+U 1 1 55241A5F
+P 2000 1650
+F 0 "R?" V 2080 1650 50  0000 C CNN
+F 1 "R" V 2000 1650 50  0000 C CNN
+F 2 "" V 1930 1650 30  0000 C CNN
+F 3 "" H 2000 1650 30  0000 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1950 2000 1950
+Wire Wire Line
+	2000 1950 2000 1800
+Wire Wire Line
+	2000 1500 2000 1300
+Connection ~ 2000 1300
+Text GLabel 1700 1300 0    60   Input ~ 0
+Vcc
+$Comp
+L CONN_01X04 P?
+U 1 1 55241ACB
+P 5500 3000
+F 0 "P?" H 5500 3250 50  0000 C CNN
+F 1 "I2C High" V 5600 3000 50  0000 C CNN
+F 2 "" H 5500 3000 60  0000 C CNN
+F 3 "" H 5500 3000 60  0000 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 2850 0    60   Input ~ 0
+Vcc
+Wire Wire Line
+	5100 2850 5300 2850
+Wire Wire Line
+	5300 3050 4250 3050
+Wire Wire Line
+	5300 3150 4250 3150
+Wire Wire Line
+	5300 2950 5100 2950
+Wire Wire Line
+	5100 2950 5100 3500
+$Comp
+L GND #PWR?
+U 1 1 55241DD9
+P 5100 3500
+F 0 "#PWR?" H 5100 3250 50  0001 C CNN
+F 1 "GND" H 5100 3350 50  0000 C CNN
+F 2 "" H 5100 3500 60  0000 C CNN
+F 3 "" H 5100 3500 60  0000 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55241EFB
+P 3250 4750
+F 0 "#PWR?" H 3250 4500 50  0001 C CNN
+F 1 "GND" H 3250 4600 50  0000 C CNN
+F 2 "" H 3250 4750 60  0000 C CNN
+F 3 "" H 3250 4750 60  0000 C CNN
+	1    3250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4550 3250 4750
+$Comp
+L 74LS138 U?
+U 1 1 55244296
+P 5750 1900
+F 0 "U?" H 5850 2400 60  0000 C CNN
+F 1 "74LS138" H 5900 1351 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5750 1900 60  0001 C CNN
+F 3 "" H 5750 1900 60  0000 C CNN
+F 4 "SN74LS138DR" H 5750 1900 60  0001 C CNN "MPN"
+F 5 " 1074831 - U0" H 5750 1900 60  0001 C CNN "ConradPN"
+	1    5750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CD4511 U?
+U 1 1 55244988
+P 5300 5850
+F 0 "U?" H 5050 6400 60  0000 C CNN
+F 1 "CD4511" H 5550 5300 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 5300 5850 60  0001 C CNN
+F 3 "" H 5300 5850 60  0000 C CNN
+F 4 "CD4511BE" H 5300 5850 60  0001 C CNN "MPN"
+F 5 "1260146 - 05" H 5300 5850 60  0001 C CNN "ConradPN"
+	1    5300 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2850 4500 2850
+Entry Wire Line
+	3850 800  3950 900 
+$EndSCHEMATC
