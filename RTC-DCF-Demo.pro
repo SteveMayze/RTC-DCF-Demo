@@ -1,4 +1,4 @@
-update=2015 April 07, Tuesday 21:45:48
+update=2015 April 26, Sunday 21:28:51
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,16 @@ LibName30=valves
 LibName31=lib/Clock-Components
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
