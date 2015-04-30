@@ -4,4 +4,8 @@ RTC-DCF-Demo-cache.lib
 *.kicad_pcb-bak
 .DS_Store
 *.swp
-
+firmware/*.bin
+firmware/*.dbg
+firmware/*.hex
+firmware/*.obj
+firmware/*.rpt
