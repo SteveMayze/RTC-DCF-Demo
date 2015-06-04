@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Clock-Components
-LIBS:RTC-DCF-Demo-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -48,12 +47,12 @@ $EndDescr
 $Comp
 L R R?
 U 1 1 55241A5F
-P 3450 1950
-F 0 "R?" V 3530 1950 50  0000 C CNN
-F 1 "10k" V 3450 1950 50  0000 C CNN
-F 2 "" V 3380 1950 30  0000 C CNN
-F 3 "" H 3450 1950 30  0000 C CNN
-	1    3450 1950
+P 3300 1950
+F 0 "R?" V 3380 1950 50  0000 C CNN
+F 1 "10k" V 3300 1950 50  0000 C CNN
+F 2 "" V 3230 1950 30  0000 C CNN
+F 3 "" H 3300 1950 30  0000 C CNN
+	1    3300 1950
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 1600 0    60   Input ~ 0
@@ -129,22 +128,11 @@ SCK
 Text GLabel 7500 3000 0    60   Input ~ 0
 MISO
 Wire Wire Line
-	3050 1600 3450 1600
-Wire Wire Line
-	3450 1600 4100 1600
-Wire Wire Line
-	4100 1600 4700 1600
+	3050 1600 4700 1600
 Wire Wire Line
 	4700 1600 4700 2200
 Wire Wire Line
-	3150 2500 3450 2500
-Wire Wire Line
-	3450 2500 3800 2500
-Wire Wire Line
-	3450 2500 3450 2100
-Wire Wire Line
-	3450 1800 3450 1600
-Connection ~ 3450 1600
+	3150 2500 3800 2500
 Wire Wire Line
 	6150 1650 6350 1650
 Wire Wire Line
@@ -200,7 +188,6 @@ F 3 "" H 8500 3450 60  0000 C CNN
 	1    8500 3450
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 2500
 Text GLabel 3150 2500 0    60   Input ~ 0
 Reset
 Text Label 5750 4400 0    60   ~ 0
@@ -357,4 +344,10 @@ F 3 "" H 6600 4700 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5700 4700 6400 4700
+Wire Wire Line
+	3300 1600 3300 1700
+Connection ~ 3300 1600
+Wire Wire Line
+	3300 2200 3300 2500
+Connection ~ 3300 2500
 $EndSCHEMATC
