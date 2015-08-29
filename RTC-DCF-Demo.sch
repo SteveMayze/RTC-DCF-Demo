@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -128,11 +127,17 @@ SCK
 Text GLabel 7500 3000 0    60   Input ~ 0
 MISO
 Wire Wire Line
-	3050 1600 4700 1600
+	3050 1600 3300 1600
+Wire Wire Line
+	3300 1600 4100 1600
+Wire Wire Line
+	4100 1600 4700 1600
 Wire Wire Line
 	4700 1600 4700 2200
 Wire Wire Line
-	3150 2500 3800 2500
+	3150 2500 3300 2500
+Wire Wire Line
+	3300 2500 3800 2500
 Wire Wire Line
 	6150 1650 6350 1650
 Wire Wire Line
@@ -345,9 +350,9 @@ $EndComp
 Wire Wire Line
 	5700 4700 6400 4700
 Wire Wire Line
-	3300 1600 3300 1700
+	3300 1600 3300 1800
 Connection ~ 3300 1600
 Wire Wire Line
-	3300 2200 3300 2500
+	3300 2100 3300 2500
 Connection ~ 3300 2500
 $EndSCHEMATC
