@@ -8,3 +8,5 @@ firmware/*.dbg
 firmware/*.obj
 firmware/*.rpt
 firmware/*.BM
+firmware/*.bin
+firmware/*.hex

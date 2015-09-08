@@ -20,7 +20,7 @@
 ' ============================================================================
 
 $crystal = 1000000
-$regfile = "m88def.dat"
+$regfile = "m88adef.dat"
 $hwstack = 40
 $swstack = 40
 $framesize = 60
@@ -35,8 +35,8 @@ Config Scl = Portc.5
 ' Timer and interrupt Configuration ==========================================
 
 On Pcint0 Pcint0_isr
-Pcmsk0.1 = 1
-Pcmsk0.2 = 1
+Pcmsk1.0 = 1
+Pcmsk1.1 = 1
 
 Config Timer0 = Timer , Prescale = 256
 On Timer0 Renderdisplay_isr
@@ -70,11 +70,11 @@ Enable Interrupts
 
 Config Portd = Output
 
-Config Pinb.1 = Input
+Config Pinc.0 = Input
 Second_interrupt Alias Pinb.1
 Dim New_second As Bit
 
-Config Pinb.2 = Input
+Config Pinc.1 = Input
 Dcf_interrupt Alias Pinb.2
 
 Config Portb.3 = Output
@@ -286,4 +286,3 @@ Tenthsecondtimer_isr:
    End If
 
  Return
-
